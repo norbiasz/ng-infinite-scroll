@@ -1,0 +1,16 @@
+<button (click)="getAlbums()">Pobierz albumy</button>
+<div 
+    class="search-results"
+    infinite-scroll
+    (scrolled)="scrollAlbums()">
+    <div *ngFor="let a of allAlbums$ | async">
+        <div class="box">
+            <div class="box__id">
+                {{ a.id }}.
+            </div>
+            <div class="box__title">
+                <b> Tytuł albumu: </b>{{ a.title }}
+            </div>
+        </div>
+    </div>
+</div>

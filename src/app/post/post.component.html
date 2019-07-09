@@ -1,0 +1,17 @@
+<button (click)="getPosts()">Pobierz posty</button>
+<div 
+    class="search-results"
+    infinite-scroll
+    (scrolled)="scrollPosts()">
+    <div *ngFor="let p of allPosts$ | async">
+        <div class="box">
+            <div class="box__id">
+                {{ p.id }}.
+            </div>
+            <div class="box__title">
+                <b> Tytuł postu: </b>{{ p.title }}
+            </div>
+        </div>
+    </div>
+</div>
+
