@@ -1,0 +1,10 @@
+<div>
+    <div *ngFor="let a of itemResultsPlanet$ | async">
+        <div class="box" [style.height]="itemHeight + 'px'">
+            <div class="box__title">
+                <b>Planet: </b>{{ a.name }}
+                <b> Population: </b>{{ a.population }}
+            </div>
+        </div>
+    </div>
+</div>

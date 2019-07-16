@@ -1,6 +1,9 @@
-# NgTabs
+# Infinite scroll
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
+Simple implementation infinite scroll based on RxJS 
+
+`https://github.com/norbiasz/ng-infinite-scroll`
+
 
 ## Development server
 

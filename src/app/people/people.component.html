@@ -1,0 +1,12 @@
+<!-- <button (click)="getPeople()">Pobierz posty</button> -->
+<div>
+    <div *ngFor="let item of itemResultsPeople$ | async">
+        <div class="box"  [style.height]="itemHeight + 'px'">
+            <div class="box__title">
+                <b> Name: </b>{{ item.name }}
+                <b> Gender: </b>{{ item.gender }}
+            </div>
+        </div>
+    </div>
+</div>
+
