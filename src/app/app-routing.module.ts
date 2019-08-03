@@ -4,7 +4,11 @@ import { PlanetComponent } from './planet/planet.component';
 import { PeopleComponent } from './people/people.component';
 
 const routes: Routes = [
-
+  {
+    path: '',
+    redirectTo: '/people',
+    pathMatch: 'full'
+  },
   {
     path: 'people',
     component: PeopleComponent
